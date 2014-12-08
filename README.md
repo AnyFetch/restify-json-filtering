@@ -71,6 +71,10 @@ var server = restify.createServer({
     'application/json': restifyJsonFilterer
   }
 });
+
+// You need to add *at least* this middleware
+server.use(restify.queryParser());
+
 ```
 
 Support: `support@anyfetch.com`.
