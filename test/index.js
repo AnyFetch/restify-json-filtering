@@ -8,7 +8,7 @@ var request = require('supertest');
 var json = require('../lib');
 var getSampleData = require('./sample.js');
 
-describe('Formatter JSON', function() {
+describe('JSON formatter', function() {
   var server;
   var data = getSampleData();
 
