@@ -5,7 +5,7 @@ require('should');
 var restify = require('restify');
 var request = require('supertest');
 
-var json = require('../lib');
+var json = require('../lib')('fields');
 var getSampleData = require('./sample.js');
 
 describe('JSON formatter', function() {
